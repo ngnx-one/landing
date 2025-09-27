@@ -4,7 +4,6 @@ import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { NavigationMenu, NavigationMenuList, NavigationMenuItem, NavigationMenuLink } from "@/components/ui/navigation-menu"
-import { ThemeToggle } from "@/components/theme-toggle"
 
 const navItems = [
   { name: "Home", href: "/" },
@@ -53,7 +52,6 @@ export function Navbar() {
 
           {/* CTA Buttons */}
           <div className="flex items-center space-x-3">
-            <ThemeToggle />
             <Button variant="secondary" size="sm" className="hidden sm:inline-flex">
               Learn More
             </Button>

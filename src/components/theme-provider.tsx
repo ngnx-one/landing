@@ -20,8 +20,9 @@ export function ThemeProvider({
       attribute="class"
       defaultTheme={defaultTheme}
       storageKey={storageKey}
-      enableSystem={true}
-      themes={["light", "dark", "system"]}
+      enableSystem={false}
+      themes={["dark"]}
+      forcedTheme="dark"
       {...props}
     >
       {children}
