@@ -5,9 +5,9 @@ import * as THREE from "three"
 
 export function ThreeCoin({ className }: { className?: string }) {
   const mountRef = useRef<HTMLDivElement>(null)
-  const sceneRef = useRef<THREE.Scene>()
-  const rendererRef = useRef<THREE.WebGLRenderer>()
-  const frameRef = useRef<number>()
+  const sceneRef = useRef<THREE.Scene | null>(null)
+  const rendererRef = useRef<THREE.WebGLRenderer | null>(null)
+  const frameRef = useRef<number | null>(null)
 
   useEffect(() => {
     if (!mountRef.current) return

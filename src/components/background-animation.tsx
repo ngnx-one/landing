@@ -6,9 +6,9 @@ import { useThemeAware } from "@/hooks/use-theme-aware"
 
 export function BackgroundAnimation() {
   const mountRef = useRef<HTMLDivElement>(null)
-  const sceneRef = useRef<THREE.Scene>()
-  const rendererRef = useRef<THREE.WebGLRenderer>()
-  const frameRef = useRef<number>()
+  const sceneRef = useRef<THREE.Scene | null>(null)
+  const rendererRef = useRef<THREE.WebGLRenderer | null>(null)
+  const frameRef = useRef<number | null>(null)
   const { isDarkMode, mounted } = useThemeAware()
 
   useEffect(() => {

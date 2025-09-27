@@ -48,7 +48,7 @@ const features = [
 ]
 
 export function ContactInfo() {
-  const sectionRef = useRef<HTMLElement>(null)
+  const sectionRef = useRef<HTMLDivElement>(null)
   const headingRef = useRef<HTMLHeadingElement>(null)
   const contactCardsRef = useRef<HTMLDivElement>(null)
   const featureCardsRef = useRef<HTMLDivElement>(null)
